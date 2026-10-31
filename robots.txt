@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /xe/common/
-Disallow: /xe/config/
 
 Sitemap: https://choijiyun.co.kr/sitemap.xml
