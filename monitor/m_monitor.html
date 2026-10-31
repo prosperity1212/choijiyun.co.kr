@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+  <head>
+    <title>모바일 모니터 뷰어 - 프리랜서 웹디자이너 최지윤</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="title" content="프리랜서 웹디자인 최지윤" />
+    <meta
+      name="description"
+      content="최지윤 디자이너의 포트폴리오를 다양한 모바일 및 태블릿 화면 크기로 미리보기 할 수 있는 모니터링 페이지입니다."
+    />
+    <meta
+      name="keywords"
+      content="모바일 뷰어, 반응형 디자인, 디자인 포트폴리오, UI UX 디자인, 웹디자인 모니터링, 최지윤"
+    />
+
+    <!-- 스타일시트 연동 (상위 폴더 기준) -->
+    <link rel="stylesheet" type="text/css" href="../default.layout.css" />
+    <link rel="stylesheet" type="text/css" href="m_monitor.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <style>
+      /* 모바일 모니터 페이지 전용 상단 여백 보정 */
+      .content {
+        padding-top: 30px !important;
+      }
+      /* 아이프레임 내부에서 상단 메뉴가 잘리지 않도록 강제 정렬 */
+      .frame-middle iframe {
+        position: relative;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+  >
+    <div class="container">
+      <p class="skip"><a href="#content">본문 바로가기</a></p>
+      <header class="header">
+        <div class="side"></div>
+        <!-- GNB 상단 헤더 메뉴 -->
+        <nav class="gnb" id="gnb">
+          <ul>
+            <li class="first"><a href="../index.html">HOME</a></li>
+            <li>
+              <a href="../sitedesign/sitedesign_1.html"
+                ><img src="../img/topmenu1.gif" alt="" />사이트제작 . 수정</a
+              >
+            </li>
+            <li>
+              <a href="../pagedesign/pagedesign_1.html"
+                ><img src="../img/topmenu2.gif" alt="" />상세페이지제작</a
+              >
+            </li>
+            <li class="active">
+              <a href="m_monitor.html"
+                ><img src="../img/topmenu3.gif" alt="" />모바일제작 . 수정</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://open.kakao.com/o/sMuNOZm"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="../img/topmenu4.gif" alt="" />카카오톡 상담</a
+              >
+            </li>
+            <li class="last">
+              <a><img src="../img/topmenu3.gif" alt="" />010-6548-1580</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="gnbx1024" id="gnb">
+          <ul>
+            <li class="first"><a href="../index.html">HOME</a></li>
+            <li>
+              <a href="../sitedesign/sitedesign_1.html"
+                ><img src="../img/topmenu1.gif" alt="" />사이트제작 . 수정</a
+              >
+            </li>
+            <li>
+              <a href="../pagedesign/pagedesign_1.html"
+                ><img src="../img/topmenu2.gif" alt="" />상세페이지제작</a
+              >
+            </li>
+            <li class="active">
+              <a href="m_monitor.html"
+                ><img src="../img/topmenu3.gif" alt="" />모바일제작 . 수정</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://open.kakao.com/o/sMuNOZm"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="../img/topmenu4.gif" alt="" />카카오톡 상담</a
+              >
+            </li>
+            <li class="last">
+              <a><img src="../img/topmenu3.gif" alt="" />010-6548-1580</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="gnbx800" id="gnb">
+          <ul class="first">
+            <li>
+              <div class="line">
+                <a href="../sitedesign/sitedesign_1.html"
+                  ><img src="img/m_topmenu1.gif" alt="" />
+                  <p>사이트제작</p></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="line">
+                <a href="../pagedesign/pagedesign_1.html"
+                  ><img src="img/m_topmenu2.gif" alt="" />
+                  <p>상세페이지제작</p></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="line">
+                <a href="m_monitor.html"
+                  ><img src="img/m_topmenu3.gif" alt="" />
+                  <p>모바일버전제작</p></a
+                >
+              </div>
+            </li>
+          </ul>
+          <ul class="last">
+            <li>
+              <div class="line">
+                <a
+                  href="https://open.kakao.com/o/sMuNOZm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="img/m_topmenu4.gif" alt="" />
+                  <p>카카오톡상담</p></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="line">
+                <a href="tel:010-6548-1580"
+                  ><img src="img/m_topmenu5.gif" alt="" />
+                  <p>전화상담</p></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="line">
+                <a
+                  href="https://form.office.naver.com/your-naver-form-url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="img/m_topmenu6.gif" alt="" />
+                  <p>견적문의</p></a
+                >
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- 본문 영역 -->
+      <div class="content" id="content">
+        <div class="monitor_view">
+          <div class="mtxt">
+            <h2>모바일 적용 예시</h2>
+            <p>반응형 제작 / 모바일버전 별도 제작</p>
+          </div>
+          <div class="phone">
+            <div class="out-layout">
+              <div class="in-layout">
+                <div class="frame">
+                  <div class="frame-top"></div>
+                  <div class="frame-middle">
+                    <div class="iframe">
+                      <iframe
+                        src="m_index.html"
+                        width="100%"
+                        height="388"
+                        frameborder="0"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="frame-bottom"></div>
+                </div>
+                <div class="bottom-txt"><a>스마트폰 예시</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="pad">
+            <div class="out-layout">
+              <div class="in-layout">
+                <div class="frame">
+                  <div class="frame-top"></div>
+                  <div class="frame-middle">
+                    <iframe
+                      src="m_index.html"
+                      width="100%"
+                      height="388"
+                      frameborder="0"
+                    ></iframe>
+                  </div>
+                  <div class="frame-bottom"></div>
+                </div>
+                <div class="bottom-txt"><a>테블릿PC 예시</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="phonex1024">
+            <div class="out-layout">
+              <div class="in-layout">
+                <div class="frame">
+                  <div class="frame-top"></div>
+                  <div class="frame-middle">
+                    <div class="iframe">
+                      <iframe
+                        src="m_index.html"
+                        width="100%"
+                        height="388"
+                        frameborder="0"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="frame-bottom"></div>
+                </div>
+                <div class="bottom-txt"><a>스마트폰 적용</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="padx1024">
+            <div class="out-layout">
+              <div class="in-layout">
+                <div class="frame">
+                  <div class="frame-top"></div>
+                  <div class="frame-middle">
+                    <iframe
+                      src="m_index.html"
+                      width="100%"
+                      height="388"
+                      frameborder="0"
+                    ></iframe>
+                  </div>
+                  <div class="frame-bottom"></div>
+                </div>
+                <div class="bottom-txt"><a>태블릿 적용</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="phonex900">
+            <div class="out-layout">
+              <div class="in-layout">
+                <div class="frame">
+                  <div class="frame-top"></div>
+                  <div class="frame-middle">
+                    <div class="iframe">
+                      <iframe
+                        src="m_index.html"
+                        width="100%"
+                        height="388"
+                        frameborder="0"
+                      ></iframe>
+                    </div>
+                  </div>
+                  <div class="frame-bottom"></div>
+                </div>
+                <div class="bottom-txt"><a>스마트폰 적용</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="padx900">
+            <div class="out-layout">
+              <div class="in-layout">
+                <div class="frame">
+                  <div class="frame-top"></div>
+                  <div class="frame-middle">
+                    <iframe
+                      src="m_index.html"
+                      width="100%"
+                      height="388"
+                      frameborder="0"
+                    ></iframe>
+                  </div>
+                  <div class="frame-bottom"></div>
+                </div>
+                <div class="bottom-txt"><a>태블릿 적용</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 하단 푸터 -->
+      <footer class="footer">
+        <p style="text-align: center; padding: 20px 0">
+          Copyright ⓒ 프리랜서 웹디자이너 최지윤 All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

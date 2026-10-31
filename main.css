@@ -1,0 +1,1672 @@
+@charset "utf-8";
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+      format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+hr.layout {
+  display: none;
+}
+
+.wrap {
+  position: relative;
+  min-height: 100%;
+  padding: 0;
+}
+@media all and (min-width: 1025px) {
+  .wrap-mobile {
+    display: none;
+  }
+  .footer-mobile {
+    display: none;
+  }
+}
+/* Main Head */
+#head {
+  border: none;
+  width: 100%;
+}
+/* Main Container */
+#container {
+  position: relative;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  height: 900px;
+  zoom: 1;
+  display: block;
+}
+.wrap .contents {
+  position: relative;
+  margin: 0px auto 0;
+  padding-top: 10%;
+  padding-bottom: 200px;
+  width: 100%;
+  height: 522px;
+  display: block;
+}
+.wrap .visual {
+  float: left;
+  width: 50%;
+  padding-top: 65px;
+  height: 522px;
+}
+.wrap .visual img {
+  width: 100%;
+}
+.wrap .txt {
+  float: right;
+  position: relative;
+  top: 70px;
+  right: -300px;
+  width: 50%;
+  height: 522px;
+  text-align: right;
+}
+.wrap .txt .top {
+  letter-spacing: 0.5em;
+}
+.wrap .top {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "NanumBarunGothic";
+}
+.wrap .top a {
+  padding-right: 10px;
+}
+.wrap .middle1 {
+  padding: 0px;
+  font-size: 88px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.wrap .middle2 {
+  position: relative;
+  top: -35px;
+  padding: 0px;
+  font-size: 88px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+}
+.wrap .bottom {
+  width: 100%;
+}
+.wrap .top_toc {
+  float: right;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-family: "NanumBarunGothic";
+  color: #000;
+  text-decoration: none;
+}
+.wrap .top_toc .top_toc_box {
+  float: right;
+  width: 20%;
+  padding-bottom: 5px;
+}
+.wrap .top_toc .top_toc_box a {
+  position: relative;
+  top: -10px;
+  text-decoration: none;
+}
+.wrap .top_toc .top_toc_box img {
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+}
+.wrap .kakao {
+  float: right;
+  width: 28%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  height: 30px; /* 버튼 높이 고정 */
+  line-height: 40px; /* 텍스트 수직 중앙 정렬 */
+  font-weight: 500;
+  font-family: "NanumBarunGothic";
+  color: #000;
+  text-decoration: none;
+  background: #fbe533;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: flex-end; /* 오른쪽으로 정렬 */
+  padding-right: 5px; /* ★ 오른쪽 끝에서 왼쪽으로 살짝 띄워주는 여백 (원하시면 10px~15px로 조절 가능합니다!) */
+}
+.wrap .kakao a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.wrap .kakao img {
+  padding-right: 8px; /* 아이콘과 텍스트 사이 간격 */
+  vertical-align: middle;
+}
+.wrap .mail {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-family: "NanumBarunGothic";
+  color: #000;
+  text-decoration: none;
+}
+.wrap .mail a {
+  position: relative;
+  top: -5px;
+  text-decoration: none;
+}
+.wrap .mail img {
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+}
+.wrap .phone {
+  float: right;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "NanumBarunGothic";
+}
+.wrap .phone a {
+  position: relative;
+  top: -5px;
+}
+.wrap .phone img {
+  padding-right: 5px;
+}
+.wrap .talk {
+  display: none;
+  float: right;
+  position: relative;
+  width: 315px;
+  margin: 15px 0 0;
+  font-size: 16px;
+  font-family: "NanumBarunGothic", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+}
+.wrap .talk .top {
+  float: right;
+  position: relative;
+  width: 315px;
+  height: 30px;
+  letter-spacing: 0em;
+}
+.wrap .talk .top .btn {
+  float: right;
+  position: relative;
+  text-align: right;
+  width: 140px;
+  background: #e6e6e6;
+  height: 30px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "NanumBarunGothic";
+  padding: 0px;
+  z-index: 3;
+}
+.wrap .talk .top .btn a {
+  position: relative;
+  top: 5px;
+  text-align: right;
+}
+.wrap .talk .top .btn img {
+  position: relative;
+  padding-right: 10px;
+  top: 3px;
+}
+.wrap .talk .top .btn .symbol {
+  position: relative;
+  float: left;
+  padding-left: 7px;
+  width: 7px;
+}
+.wrap .talk .top .btn .symbol a {
+  position: relative;
+  top: 5px;
+  text-align: left;
+}
+.wrap .talk .toc {
+  float: right;
+  width: 305px;
+  margin: -15px 0 0;
+  padding: 0px;
+  z-index: 1;
+  background: #fff;
+}
+.wrap .talk .toc .box {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  background: #e6e6e6;
+  top: 22px;
+  width: 63px;
+  height: 22px;
+}
+
+/* Footer*/
+.footer {
+  margin-top: -124px;
+  clear: both;
+  position: relative;
+  height: 124px;
+  background: #222222;
+}
+.footer-layout {
+  max-width: 1080px;
+  width: 100%;
+  height: 124px;
+  margin: 0 auto;
+}
+.footer-menu {
+  position: relative;
+  padding-left: 0px;
+  float: left;
+  max-width: 55%;
+  width: 100%;
+}
+.footer-menu li {
+  float: left;
+  padding-top: 20px;
+  width: 33.3%;
+  text-align: center;
+  font-family: "NanumBarunGothic";
+}
+.footer-menu .line {
+  background: url("./img/bottom_menu_bg.gif") 0 35px no-repeat;
+}
+.footer-menu p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+.footer-mail {
+  position: relative;
+  float: right;
+  margin-top: 25px;
+  margin-right: 0px;
+  max-width: 40%;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #fff;
+}
+.footer-mail .mail {
+  width: 410px;
+  height: 40px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.footer-mail .mail .img {
+  position: relative;
+  float: left;
+  width: 53px;
+  padding: 0px;
+  padding-left: 20px;
+}
+.footer-mail .mail .img img {
+  text-align: center;
+  width: 53px;
+  padding: 0px;
+}
+.footer-mail .mail .text {
+  position: relative;
+  color: #fff;
+  height: 40px;
+  left: 20px;
+  padding: 0;
+  display: inline-block;
+  font-size: 19px;
+  font-family: "NanumBarunGothic";
+}
+.footer-mail .mail .text p {
+  padding-top: 7px;
+}
+.footer-mail .mail-btn {
+  position: relative;
+  float: right;
+  margin-top: 0px;
+  top: 5px;
+  right: 10px;
+  display: inline-block;
+}
+
+.hidden-footer {
+  position: relative;
+  top: -124px;
+  width: 100%;
+  height: 300px;
+  background: #222222;
+  z-index: 6;
+  padding: 0px;
+}
+.hidden-layout {
+  max-width: 1080px;
+  width: 100%;
+  height: 124px;
+  margin: 0 auto;
+}
+.hidden-menu {
+  padding-left: 0px;
+  float: left;
+  max-width: 58%;
+  width: 100%;
+}
+.hidden-menu li {
+  float: left;
+  padding-top: 20px;
+  width: 33.3%;
+  text-align: center;
+  font-family: "NanumBarunGothic";
+}
+.hidden-menu .line {
+  background: url("./img/bottom_menu_bg.gif") 0 35px no-repeat;
+}
+.hidden-menu p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+.hidden-mail {
+  position: relative;
+  float: left;
+  margin-top: 25px;
+  margin-right: 0px;
+  max-width: 41%;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #fff;
+}
+.hidden-mail .mail {
+  width: 100%;
+  height: 70px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+.hidden-mail .mail .img {
+  position: relative;
+  float: left;
+  width: 53px;
+  height: 70px;
+  padding: 0px;
+  padding-left: 20px;
+}
+.hidden-mail .mail .img img {
+  text-align: center;
+  width: 53px;
+  padding: 0px;
+  padding-top: 15px;
+}
+.hidden-mail .mail .text {
+  position: relative;
+  float: left;
+  color: #fff;
+  width: 70%;
+  height: 70px;
+  left: 0px;
+  margin-top: 11px;
+  padding: 0;
+  display: inline-block;
+  font-size: 19px;
+  font-family: "NanumBarunGothic";
+}
+.hidden-mail .mail .text p {
+  padding: 11px;
+}
+.hidden-mail .mail-btn {
+  position: relative;
+  float: right;
+  margin-top: 0px;
+  width: 10%;
+  height: 70px;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  border-left: 1px solid #fff;
+}
+.hidden-mail .mail-btn img {
+  position: relative;
+  float: right;
+  top: 50%;
+  right: 40%;
+}
+
+.mail-fome {
+  width: 100%;
+  font-weight: 300;
+  clear: both;
+}
+
+@media all and (min-width: 801px) and (max-width: 1024px) {
+  body,
+  html {
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #000;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  hr.layout {
+    display: none;
+  }
+  .wrap-mobile,
+  .footer-mobile {
+    display: none;
+  }
+  #head {
+    border: none;
+    width: 100%;
+  }
+  #container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 922px;
+    zoom: 1;
+    display: block;
+  }
+  .contents {
+    position: relative;
+    width: 100%;
+    margin: 0px auto 0;
+    padding-top: 11%;
+    padding-bottom: 200px;
+    height: 922px;
+    display: block;
+  }
+  .visual {
+    float: left;
+    position: relative;
+    top: 10%;
+    width: 50%;
+    height: 522px;
+  }
+  .visual img {
+    width: 100%;
+  }
+  .txt {
+    float: right;
+    position: relative;
+    top: 150px;
+    right: -300px;
+    width: 50%;
+    height: 522px;
+    text-align: right;
+  }
+  .top {
+    text-align: right;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "NanumBarunGothic";
+  }
+  .top a {
+    padding-right: 10px;
+  }
+  .middle1 {
+    padding: 0px;
+    font-size: 88px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+  }
+  .middle2 {
+    position: relative;
+    top: -35px;
+    padding: 0px;
+    font-size: 88px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+  }
+  .bottom {
+    width: 100%;
+  }
+  .kakao {
+    float: right;
+    width: 25%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+    color: #000;
+    text-decoration: none;
+  }
+  .kakao a {
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+  }
+  .kakao img {
+    padding-right: 5px;
+  }
+  .phone {
+    float: right;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+  }
+  .phone a {
+    position: relative;
+    top: -5px;
+  }
+  .phone img {
+    padding-right: 5px;
+  }
+  .talk {
+    float: right;
+    position: relative;
+    width: 315px;
+    margin: 15px 0 0;
+    font-size: 16px;
+    font-family: "NanumBarunGothic", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .talk .top {
+    float: right;
+    position: relative;
+    width: 315px;
+    height: 30px;
+  }
+  .talk .btn {
+    float: right;
+    position: relative;
+    text-align: center;
+    width: 130px;
+    background: #e6e6e6;
+    height: 30px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+    padding: 0px;
+    z-index: 3;
+  }
+  .talk .btn a {
+    position: relative;
+    top: 5px;
+    text-align: center;
+  }
+  .talk .btn img {
+    position: relative;
+    padding-right: 10px;
+    top: 3px;
+  }
+  .talk .toc {
+    float: right;
+    width: 305px;
+    margin: -15px 0 0;
+    padding: 0px;
+    z-index: 1;
+    background: #fff;
+  }
+  .talk .toc .box {
+    position: relative;
+    background: #e6e6e6;
+    top: 20px;
+    width: 55px;
+    height: 20px;
+  }
+
+  .footer {
+    margin-top: -124px;
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 144px;
+    background: #222222;
+  }
+  .footer-layout {
+    position: relative;
+    width: 100%;
+    height: 124px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .footer-menu {
+    position: relative;
+    padding-left: 0px;
+    float: left;
+    max-width: 55%;
+    width: 100%;
+  }
+  .footer-menu li {
+    float: left;
+    padding-top: 20px;
+    width: 33.3%;
+    text-align: center;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-menu .line {
+    background: url("./img/bottom_menu_bg.gif") 0 35px no-repeat;
+  }
+  .footer-menu p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .footer-mail {
+    position: relative;
+    float: left;
+    margin-top: 25px;
+    margin-right: 0px;
+    max-width: 40%;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #fff;
+  }
+  .footer-mail .mail {
+    width: 100%;
+    height: 70px;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  .footer-mail .mail .img {
+    position: relative;
+    float: left;
+    width: 53px;
+    height: 70px;
+    padding: 0px;
+    padding-left: 20px;
+  }
+  .footer-mail .mail .img img {
+    text-align: center;
+    width: 53px;
+    padding-top: 15px;
+  }
+  .footer-mail .mail .text {
+    position: relative;
+    float: left;
+    color: #fff;
+    width: 60%;
+    height: 70px;
+    left: 0px;
+    margin-right: 45px;
+    padding: 0;
+    display: inline-block;
+    font-size: 19px;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mail .mail .text p {
+    padding: 11px;
+  }
+  .footer-mail .mail-btn {
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    width: 20%;
+    height: 70px;
+    top: -70px;
+    right: 0px;
+    display: inline-block;
+    border-left: 1px solid #fff;
+  }
+  .footer-mail .mail-btn img {
+    position: relative;
+    float: right;
+    top: 50%;
+    right: 40%;
+  }
+
+  .hidden-footer {
+    position: relative;
+    top: -124px;
+    width: 100%;
+    height: 250px; /* 기존 924px에서 네이버 폼 박스 높이에 맞게 축소 */
+    background: #222222;
+    z-index: 6;
+    padding: 0px;
+  }
+  .hidden-layout {
+    width: 100%;
+    height: 124px;
+    margin: 0 auto;
+  }
+  .hidden-menu {
+    padding-left: 0px;
+    float: left;
+    max-width: 55%;
+    width: 100%;
+  }
+  .hidden-menu li {
+    float: left;
+    padding-top: 20px;
+    width: 33.3%;
+    text-align: center;
+    font-family: "NanumBarunGothic";
+  }
+  .hidden-menu .line {
+    background: url("./img/bottom_menu_bg.gif") 0 35px no-repeat;
+  }
+  .hidden-menu p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .hidden-mail {
+    position: relative;
+    float: left;
+    margin-top: 25px;
+    margin-right: 0px;
+    max-width: 40%;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #fff;
+  }
+  .hidden-mail .mail {
+    width: 100%;
+    height: 70px;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  .hidden-mail .mail .img {
+    position: relative;
+    float: left;
+    width: 53px;
+    height: 70px;
+    padding: 0px;
+    padding-left: 20px;
+  }
+  .hidden-mail .mail .img img {
+    text-align: center;
+    width: 53px;
+    padding: 0px;
+    padding-top: 15px;
+  }
+  .hidden-mail .mail .text {
+    position: relative;
+    float: left;
+    color: #fff;
+    width: 55%;
+    height: 70px;
+    left: 0px;
+    margin-top: 2px;
+    padding: 0;
+    display: inline-block;
+    font-size: 19px;
+    font-family: "NanumBarunGothic";
+  }
+  .hidden-mail .mail .text p {
+    padding: 11px;
+  }
+  .hidden-mail .mail-btn {
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    width: 20%;
+    height: 70px;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    border-left: 1px solid #fff;
+  }
+  .hidden-mail .mail-btn img {
+    position: relative;
+    float: right;
+    top: 50%;
+    right: 40%;
+  }
+
+  .mail-fome {
+    width: 100%;
+    font-weight: 300;
+  }
+}
+
+@media all and (min-width: 301px) and (max-width: 800px) {
+  body,
+  html {
+    min-width: 100%;
+  }
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #000;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  hr.layout {
+    display: none;
+  }
+  .wrap,
+  .footer {
+    display: none;
+  }
+  .wrap-mobile {
+    position: relative;
+    min-height: 100%;
+    padding: 0;
+  }
+  #mhead {
+    border: none;
+    width: 100%;
+  }
+  #mcontainer {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 522px;
+    zoom: 1;
+    display: block;
+  }
+  .wrap-mobile .mcontents {
+    position: relative;
+    width: 100%;
+    margin: 0px auto 0;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    height: 522px;
+    display: block;
+    cursor: pointer;
+  }
+  .wrap-mobile .mvisual {
+    float: right;
+    position: relative;
+    text-align: center;
+    top: 50px;
+    width: 100%;
+    height: 522px;
+  }
+  .wrap-mobile .mvisual img {
+    position: relative;
+    max-width: 541px;
+    width: 100%;
+  }
+  .wrap-mobile .mtxt {
+    float: left;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 522px;
+    text-align: right;
+  }
+  .wrap-mobile .mtop {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "NanumBarunGothic";
+  }
+  .wrap-mobile .mtop a {
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  .wrap-mobile .m-middle1 {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    font-size: 68px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+  }
+  .wrap-mobile .m-middle2 {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    font-size: 78px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+  }
+  .wrap-mobile .mbottom {
+    width: 100%;
+  }
+  .wrap-mobile .mbottom a {
+    cursor: pointer;
+  }
+  .wrap-mobile .mkakao {
+    float: left;
+    width: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+    color: #000;
+    text-decoration: none;
+  }
+  .wrap-mobile .mkakao a {
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+  }
+  .wrap-mobile .mkakao img {
+    padding-right: 5px;
+  }
+  .wrap-mobile .mphone {
+    float: right;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+  }
+  .wrap-mobile .mphone a {
+    position: relative;
+    top: -5px;
+  }
+  .wrap-mobile .mphone img {
+    padding-right: 5px;
+  }
+  .wrap-mobile .mtalk {
+    float: right;
+    position: relative;
+    width: 100%;
+    margin: 15px 0 0;
+    font-size: 16px;
+    font-family: "NanumBarunGothic", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .wrap-mobile .mtalk .top {
+    float: right;
+    position: relative;
+    width: 315px;
+    height: 30px;
+  }
+  .wrap-mobile .mtalk .btn {
+    float: left;
+    position: relative;
+    text-align: center;
+    top: 23px;
+    width: 95px;
+    background: #e6e6e6;
+    height: 23px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+    padding: 0px;
+    z-index: 3;
+  }
+  .wrap-mobile .mtalk .btn a {
+    position: relative;
+    top: 5px;
+    text-align: center;
+  }
+  .wrap-mobile .mtalk .btn img {
+    position: relative;
+    padding-right: 10px;
+    top: 3px;
+  }
+  .wrap-mobile .mtalk .toc {
+    float: right;
+    width: 100%;
+    margin: -15px 0 0;
+    padding: 0px;
+    z-index: 1;
+    background: #fff;
+  }
+  .wrap-mobile .mtalk .toc .box {
+    position: relative;
+    background: #e6e6e6;
+    top: 10px;
+    width: 55px;
+    height: 20px;
+    border: 1px solid #000;
+  }
+
+  .footer-mobile {
+    margin-top: -424px;
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 424px;
+    background: #222222;
+  }
+  .footer-mobile .footer-layout {
+    position: relative;
+    width: 100%;
+    height: 124px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .footer-mobile .footer-menu {
+    position: relative;
+    padding-left: 0px;
+    float: left;
+    max-width: 800px;
+    width: 100%;
+  }
+  .footer-mobile .footer-menu .first {
+    padding-bottom: 20px;
+    height: 115px;
+  }
+  .footer-mobile .footer-menu .last {
+    height: 115px;
+  }
+  .footer-mobile .footer-menu li {
+    float: left;
+    padding-top: 20px;
+    width: 33.3%;
+    text-align: center;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .footer-menu li img {
+    max-width: 46px;
+    width: 100%;
+  }
+  .footer-mobile .footer-menu .line {
+    background: url("./img/bottom_menu_bg.gif") 0 35px no-repeat;
+  }
+  .footer-mobile .footer-menu p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .footer-mobile .footer-mail {
+    position: relative;
+    float: left;
+    margin-top: 55px;
+    margin-right: 0px;
+    max-width: 800px;
+    width: 100%;
+    height: 70px;
+    border: none;
+  }
+  .footer-mobile .footer-mail .mail {
+    margin: 0 auto;
+    width: 90%;
+    height: 70px;
+    margin-top: 0px;
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+  .footer-mobile .footer-mail .mail .img {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    width: 53px;
+    height: 40px;
+    padding: 0px;
+    padding-left: 20px;
+  }
+  .footer-mobile .footer-mail .mail .img img {
+    text-align: center;
+    max-width: 53px;
+    width: 100%;
+    padding: 0px;
+  }
+  .footer-mobile .footer-mail .mail .text {
+    position: relative;
+    margin-top: 15px;
+    float: left;
+    max-width: 50%;
+    height: 70px;
+    color: #fff;
+    top: 0px;
+    font-size: 17px;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .footer-mail .mail .text p {
+    width: 100%;
+    color: #fff;
+  }
+  .footer-mobile .footer-mail .mail-btn {
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    width: 20%;
+    height: 70px;
+    top: 0px;
+    border-left: 1px solid #fff;
+  }
+  .footer-mobile .footer-mail .mail-btn img {
+    position: relative;
+    float: right;
+    top: 50%;
+    right: 40%;
+  }
+
+  .footer-mobile .hidden-footer {
+    position: relative;
+    top: -124px;
+    width: 100%;
+    height: 300px;
+    background: #222222;
+    z-index: 6;
+  }
+  .footer-mobile .hidden-layout {
+    width: 100%;
+    height: 124px;
+    margin: 0 auto;
+  }
+  .footer-mobile .hidden-menu {
+    padding-left: 0px;
+    float: left;
+    min-width: 100%;
+    width: 50%;
+  }
+  .footer-mobile .hidden-menu li {
+    float: left;
+    padding-top: 20px;
+    width: 25%;
+    text-align: center;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .hidden-menu .line {
+    background: url("./img/bottom_menu_bg.gif") 0 35px no-repeat;
+  }
+  .footer-mobile .hidden-menu p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .footer-mobile .hidden-mail {
+    float: right;
+    margin-top: 25px;
+    margin-right: 0px;
+    min-width: 100%;
+    width: 50%;
+    height: 70px;
+  }
+  .footer-mobile .hidden-mail .mail {
+    width: 380px;
+    height: 40px;
+    margin-top: 15px;
+  }
+  .footer-mobile .hidden-mail .mail img {
+    padding-left: 20px;
+  }
+  .footer-mobile .hidden-mail .text {
+    position: relative;
+    color: #fff;
+    top: -11px;
+    left: 10px;
+    font-size: 19px;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .hidden-mail .mail-btn {
+    float: right;
+    margin-top: 8px;
+  }
+
+  .footer-mobile .mail-fome {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 300px) {
+  body,
+  html {
+    min-width: 100%;
+  }
+  a:link {
+    color: #000;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #000;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  a:active {
+    color: #000;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  hr.layout {
+    display: none;
+  }
+  .wrap {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .wrap-mobile {
+    position: relative;
+    min-height: 100%;
+    padding: 0;
+  }
+  /* Main Head */
+  #mhead {
+    border: none;
+    width: 100%;
+  }
+  /* Main Container */
+  #mcontainer {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 522px;
+    *zoom: 1;
+    display: block;
+  }
+  .wrap-mobile .mcontents {
+    position: relative;
+    width: 100%;
+    margin: 0px auto 0;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    height: 522px;
+    display: block;
+    cursor: pointer;
+  }
+  .wrap-mobile .mvisual {
+    float: right;
+    position: relative;
+    text-align: center;
+    -ms-padding-before: 50px;
+    -webkit-padding-before: 150px;
+    width: 100%;
+    height: 422px;
+  }
+  .wrap-mobile .mvisual img {
+    position: relative;
+    max-width: 541px;
+    width: 100%;
+  }
+  .wrap-mobile .mtxt {
+    float: left;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 522px;
+    text-align: right;
+  }
+  .wrap-mobile .mtop {
+    position: relative;
+    top: 0px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "NanumBarunGothic";
+  }
+  .wrap-mobile .mtop a {
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  .wrap-mobile .m-middle1 {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    font-size: 68px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+  }
+  .wrap-mobile .m-middle2 {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    font-size: 78px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+  }
+  .wrap-mobile .mbottom {
+    width: 100%;
+  }
+  .wrap-mobile .mbottom a {
+    cursor: pointer;
+  }
+  .wrap-mobile .mkakao {
+    float: left;
+    width: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+    color: #000;
+    text-decoration: none;
+  }
+  .wrap-mobile .mkakao a {
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+  }
+  .wrap-mobile .mkakao img {
+    padding-right: 5px;
+  }
+  .wrap-mobile .mphone {
+    float: right;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+  }
+  .wrap-mobile .mphone a {
+    position: relative;
+    top: -5px;
+  }
+  .wrap-mobile .mphone img {
+    padding-right: 5px;
+  }
+  .wrap-mobile .mtalk {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0 0 0px;
+    margin: 15px 0 0;
+    font-size: 16px;
+    font-family: "NanumBarunGothic", sans-serif;
+    padding: 0px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  .wrap-mobile .mtalk .top {
+    float: right;
+    position: relative;
+    width: 315px;
+    height: 30px;
+  }
+  .wrap-mobile .mtalk .btn {
+    float: left;
+    position: relative;
+    text-align: center;
+    top: 23px;
+    width: 95px;
+    background: #e6e6e6;
+    height: 23px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "NanumBarunGothic";
+    padding: 0px;
+    z-index: 3;
+  }
+  .wrap-mobile .mtalk .btn a {
+    position: relative;
+    top: 5px;
+    text-align: center;
+  }
+  .wrap-mobile .mtalk .btn img {
+    position: relative;
+    padding-right: 10px;
+    top: 3px;
+  }
+  .wrap-mobile .mtalk .toc {
+    float: right;
+    width: 100%;
+    margin: -15px 0 0;
+    padding: 0px;
+    z-index: 1;
+    background: #fff;
+  }
+  .wrap-mobile .mtalk .toc .box {
+    position: relative;
+    background: #e6e6e6;
+    top: 10px;
+    width: 55px;
+    height: 20px;
+    border: 1px solid #000;
+  }
+
+  /* Footer*/
+  .footer-mobile {
+    margin-top: -424px;
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 424px;
+    background: #222222;
+  }
+  .footer-mobile .footer-layout {
+    position: relative;
+    width: 100%;
+    height: 124px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .footer-mobile .footer-menu {
+    position: relative;
+    padding-left: 0px;
+    float: left;
+    max-width: 800px;
+    width: 100%;
+  }
+  .footer-mobile .footer-menu .first {
+    padding-bottom: 20px;
+    height: 115px;
+  }
+  .footer-mobile .footer-menu .last {
+    height: 115px;
+  }
+  .footer-mobile .footer-menu li {
+    float: left;
+    padding-top: 20px;
+    width: 33.3%;
+    text-align: center;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .footer-menu li img {
+    max-width: 46px;
+    width: 100%;
+  }
+  .footer-mobile .footer-menu .line {
+    background: url("./img/bottom_menu_bg.gif") 0 35px no-repeat;
+  }
+  .footer-mobile .footer-menu .hidden {
+  }
+  .footer-mobile .footer-menu p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .footer-mobile .footer-mail {
+    position: relative;
+    float: left;
+    margin-top: 55px;
+    margin-right: 0px;
+    max-width: 800px;
+    width: 100%;
+    height: 70px;
+    border: none;
+  }
+  .footer-mobile .footer-mail .mail {
+    margin: 0 auto;
+    width: 90%;
+    height: 70px;
+    margin-top: 0px;
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+  .footer-mobile .footer-mail .mail .img {
+    display: none;
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    width: 13px;
+    height: 40px;
+    padding: 0px;
+    padding-left: 10px;
+  }
+  .footer-mobile .footer-mail .mail .img img {
+    text-align: center;
+    max-width: 53px;
+    width: 100%;
+    padding: 0px;
+  }
+  .footer-mobile .footer-mail .mail .text {
+    position: relative;
+    margin-top: 10px;
+    float: left;
+    max-width: 60%;
+    height: 70px;
+    color: #fff;
+    top: 0px;
+    font-size: 17px;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .footer-mail .mail .text p {
+    width: 100%;
+    color: #fff;
+  }
+  .footer-mobile .footer-mail .mail-btn {
+    position: relative;
+    float: right;
+    margin-top: 0px;
+    width: 20%;
+    height: 70px;
+    top: 0px;
+    border-left: 1px solid #fff;
+  }
+  .footer-mobile .footer-mail .mail-btn img {
+    position: relative;
+    float: right;
+    top: 50%;
+    right: 40%;
+  }
+
+  .footer-mobile .hidden-footer {
+    position: relative;
+    top: -124px;
+    width: 100%;
+    height: 924px;
+    background: #222222;
+    z-index: 6;
+  }
+  .footer-mobile .hidden-layout {
+    width: 100%;
+    height: 124px;
+    margin: 0 auto;
+  }
+  .footer-mobile .hidden-menu {
+    padding-left: 0px;
+    float: left;
+    min-width: 100%;
+    width: 50%;
+  }
+  .footer-mobile .hidden-menu li {
+    float: left;
+    padding-top: 20px;
+    width: 25%;
+    text-align: center;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .hidden-menu .line {
+    background: url("./img/bottom_menu_bg.gif") 0 35px no-repeat;
+  }
+  .footer-mobile .hidden-menu p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .footer-mobile .hidden-mail {
+    float: right;
+    margin-top: 25px;
+    margin-right: 0px;
+    min-width: 100%;
+    width: 50%;
+    height: 70px;
+  }
+  .footer-mobile .hidden-mail .mail {
+    width: 380px;
+    height: 40px;
+    margin-top: 15px;
+  }
+  .footer-mobile .hidden-mail .mail img {
+    padding-left: 20px;
+  }
+  .footer-mobile .hidden-mail .text {
+    position: relative;
+    color: #fff;
+    top: -11px;
+    left: 10px;
+    font-size: 19px;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .hidden-mail .mail-btn {
+    float: right;
+    margin-top: 8px;
+  }
+
+  .footer-mobile .mail-fome {
+    width: 100%;
+  }
+  .footer-mobile .board_write {
+    position: relative;
+    top: 104px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 14px;
+    font-family: "NanumBarunGothic";
+  }
+  .footer-mobile .board_write {
+    width: 100%;
+    line-height: 1.5;
+  }
+  .footer-mobile .board_write tbody th {
+    padding: 9px 0 9px;
+  }
+  .footer-mobile .board_write .title {
+    width: 30%;
+  }
+  .footer-mobile .board_write td {
+    padding: 9px 0 9px;
+  }
+  .footer-mobile .board_write .textfield {
+    padding: 5px;
+    width: 70%;
+    height: 35px;
+    background: #5d5d5d;
+    border: none;
+  }
+  .footer-mobile .board_write .textfield2 {
+    padding: 5px;
+    width: 70%;
+    height: 230px;
+    background: #5d5d5d;
+    border: none;
+  }
+  .footer-mobile .board_write .button {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+  }
+  .footer-mobile .board_write .button .mailbtn {
+    position: relative;
+    margin: 0 auto;
+    margin-left: 70px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-family: "NanumBarunGothic";
+  }
+}
