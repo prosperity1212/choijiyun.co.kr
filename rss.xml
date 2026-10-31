@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>프리랜서 웹디자이너 최지윤</title>
+    <link>https://choijiyun.co.kr</link>
+    <description>사이트 제작·수정 및 상세페이지 제작 전문 포트폴리오</description>
+    <lastBuildDate>Sat, 03 Jan 2026 05:25:00 +0900</lastBuildDate>
+
+    <!-- 아이템 1: 사이트 제작/수정 -->
+    <item>
+      <title>사이트 제작 및 유지보수 수정</title>
+      <link>https://choijiyun.co.kr/sitedesign</link>
+      <description><![CDATA[기존 사이트의 디자인 수정부터 신규 제작까지, 그누보드 및 반응형 웹퍼블리싱 서비스를 제공합니다.]]></description>
+      <pubDate>Sat, 03 Jan 2026 05:00:00 +0900</pubDate>
+      <guid>https://choijiyun.co.kr/sitedesign</guid>
+    </item>
+
+    <!-- 아이템 2: 모바일 제작/수정 -->
+    <item>
+      <title>모바일 버전 제작 및 최적화</title>
+      <link>https://choijiyun.co.kr/m_monitor.html</link>
+      <description><![CDATA[스마트폰 및 태블릿 환경에 최적화된 모바일 전용 페이지 제작 사례를 확인하실 수 있습니다.]]></description>
+      <pubDate>Sat, 03 Jan 2026 05:10:00 +0900</pubDate>
+      <guid>https://choijiyun.co.kr/m_monitor.html</guid>
+    </item>
+  </channel>
+</rss>
