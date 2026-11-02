@@ -61,64 +61,6 @@
       });
 
       /**
-       - 톡플러스
-       */
-      var iType = 1;
-      $(document).ready(function () {
-        $(".toc").hide();
-        var timer = setInterval(function () {
-          $(".talk").ready(function () {
-            if (iType == 1) {
-              $(".toc").stop().animate(
-                {
-                  opacity: "hide",
-                },
-                "slow"
-              );
-              $(".btn").stop().animate({ width: "+140" }, "slow");
-              iType = 2;
-            } else if (iType == 2) {
-              $(".toc").stop().animate(
-                {
-                  opacity: "show",
-                },
-                "slow"
-              );
-              $(".btn").stop().animate({ width: "305" }, "slow");
-              iType = 1;
-            }
-          });
-        }, 5000);
-
-        $(".toc").hover(function () {
-          clearInterval(timer);
-        });
-
-        $(".top").click(function () {
-          if (iType == 1) {
-            $(".toc").stop().animate(
-              {
-                opacity: "hide",
-              },
-              "slow"
-            );
-            $(".btn").stop().animate({ width: "+140" }, "slow");
-            iType = 2;
-          } else if (iType == 2) {
-            $(".toc").stop().animate(
-              {
-                opacity: "show",
-              },
-              "slow"
-            );
-            $(".btn").stop().animate({ width: "305" }, "slow");
-            iType = 1;
-            clearInterval(timer);
-          }
-        });
-      });
-
-      /**
        - 모바일 하단 이동
        */
       $(document).ready(function () {
@@ -211,6 +153,8 @@
                 >
               </div>
             </div>
+            <!-- 실시간 상담 영역 임시 주석 처리 (검색 로봇 수집 방지 및 화면 숨김) -->
+            <!--
             <div class="talk">
               <div class="top">
                 <div class="btn">
@@ -228,6 +172,7 @@
                 ></iframe>
               </div>
             </div>
+            -->
           </div>
         </div>
       </div>
