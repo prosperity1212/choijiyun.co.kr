@@ -151,7 +151,7 @@ hr.layout {
   font-size: 16px;
   margin-bottom: 15px;
   height: 30px; /* 버튼 높이 고정 */
-  line-height: 20px; /* 텍스트 수직 중앙 정렬 */
+  line-height: 30px; 
   font-weight: 500;
   font-family: "NanumBarunGothic";
   color: #000;
@@ -162,19 +162,24 @@ hr.layout {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   display: flex;
-  align-items: center; /* 수직 중앙 정렬 */
-  justify-content: flex-end; /* 오른쪽으로 정렬 */
-  padding-right: 5px; /* ★ 오른쪽 끝에서 왼쪽으로 살짝 띄워주는 여백 (원하시면 10px~15px로 조절 가능합니다!) */
+  align-items: center; /* 아이콘과 텍스트를 상하 중앙 정렬 */
+  justify-content: flex-end; 
+  padding-right: 15px; /* 오른쪽 여백 조절 */
 }
+
 .wrap .kakao a {
   text-decoration: none;
   color: #000;
   display: flex;
   align-items: center;
+  position: static; /* 기존에 미세하게 밀어내던 position 속성 제거 */
+  top: 0; 
 }
+
 .wrap .kakao img {
-  padding-right: 8px; /* 아이콘과 텍스트 사이 간격 */
+  padding-right: 8px; 
   vertical-align: middle;
+  position: static; /* 이미지의 상대 위치 초기화 */
 }
 .wrap .mail {
   float: left;
