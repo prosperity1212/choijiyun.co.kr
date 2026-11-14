@@ -24,7 +24,7 @@
       property="og:description"
       content="프리랜서 웹디자이너, 프리랜서, 웹디자이너, 웹디자이너 최지윤 포트폴리오"
     />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="./img/com.png" />
     <meta property="og:url" content="https://choijiyun.co.kr/" />
     <meta
       name="naver-site-verification"
@@ -45,7 +45,7 @@
     <!--메인js-->
     <script>
       /**
-       - 메인 슬라이드
+       * - 메인 슬라이드
        */
       var iType = 1;
       $(document).ready(function () {
@@ -61,7 +61,7 @@
       });
 
       /**
-       - 모바일 하단 이동
+       * - 모바일 하단 이동
        */
       $(document).ready(function () {
         $(".mcontents").click(function () {
@@ -76,7 +76,7 @@
       });
 
       /**
-       - 모바일 안내 멘트
+       * - 모바일 안내 멘트 (버그 수정: 비교 연산자 == 를 대입 연산자 = 로 변경)
        */
       $(document).ready(function () {
         var width_size = 800;
@@ -90,10 +90,10 @@
               },
               400
             );
-            width_size == 600;
+            width_size = 600;
           } else if (width_size == 600) {
             $(".mguide").hide();
-            width_size == 800;
+            width_size = 800;
           }
         });
       });
@@ -153,26 +153,6 @@
                 >
               </div>
             </div>
-            <!-- 실시간 상담 영역 임시 주석 처리 (검색 로봇 수집 방지 및 화면 숨김) -->
-            <!--
-            <div class="talk">
-              <div class="top">
-                <div class="btn">
-                  <div class="symbol"><a> &lt; </a></div>
-                  <a> 실시간1:1상담</a>
-                </div>
-              </div>
-              <div class="toc">
-                <div class="box"></div>
-                <iframe
-                  class="frame"
-                  style="width: 100%; height: 100%; padding: 0px 0 0px 0px"
-                  src="//kr07.tocplus007.com/iframeChatLoader.do?userId=mjylove00&color=e6e6e6&locale=ko"
-                  title="실시간 상담"
-                ></iframe>
-              </div>
-            </div>
-            -->
           </div>
         </div>
       </div>

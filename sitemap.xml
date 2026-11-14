@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- 메인 페이지 -->
   <url>
     <loc>https://choijiyun.co.kr/</loc>
-    <lastmod>2026-01-12T18:00:00+00:00</lastmod>
+    <lastmod>2026-11-14T00:00:00+00:00</lastmod>
     <changefreq>always</changefreq>
     <priority>1.00</priority>
   </url>
+  <!-- 사이트 제작 목록 페이지 -->
   <url>
-    <loc>https://choijiyun.co.kr/sitedesign</loc>
+    <loc>https://choijiyun.co.kr/sitedesign/sitedesign_1.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+  <!-- 상세페이지 제작 목록 페이지 -->
   <url>
-    <loc>https://choijiyun.co.kr/pagedesign</loc>
+    <loc>https://choijiyun.co.kr/pagedesign/pagedesign_1.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+  <!-- 모바일 뷰어 페이지 -->
   <url>
-    <loc>https://choijiyun.co.kr/m_monitor.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://choijiyun.co.kr/talk.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://choijiyun.co.kr/mail.html</loc>
+    <loc>https://choijiyun.co.kr/monitor/m_monitor.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
